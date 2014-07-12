@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="30dp"
+    android:paddingTop="80dp" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:src="@drawable/reach" />
+
+    <TextView
+        android:id="@+id/student"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="-40dp"
+        android:textColor="#FFFFFF"
+        android:onClick="onLoginPressed"
+        android:text="STUDENT"
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:id="@+id/login_box"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_weight="1"
+        android:paddingTop="60dp"
+        android:background="#00000000"
+        android:gravity="center_horizontal|bottom"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:ems="20"
+            android:textColor="#FFFFFF"
+            android:hint="Email"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ems="20"
+            android:textColor="#FFFFFF"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="80dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/signup_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="60dp"
+                android:background="#00000000"
+                android:onClick="onSignUp"
+                android:text="Sign Up"
+                android:textColor="@drawable/white_text_button"
+                android:textSize="16dp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="60dp"
+                android:background="#00000000"
+                android:onClick="onLogIn"
+                android:text="Log In"
+                android:textColor="@drawable/white_text_button"
+                android:textSize="16dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/linkedin_login_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#00000000"
+        android:onClick="onLoginPressed"
+        android:text="Sign in to LinkedIn"
+        android:textColor="@drawable/white_text_button"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+</LinearLayout>

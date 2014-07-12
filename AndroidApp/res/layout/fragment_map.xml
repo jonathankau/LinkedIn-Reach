@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9F2F5">
+    
+    <ImageView
+        android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/floor_map"
+        android:layout_alignParentTop="true"/>
+        
+    <TextView
+        android:id="@+id/checkin"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="#24B0E2"
+        android:text="Check In"
+        android:textAllCaps="true"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:textSize="22sp"/>
+    
+
+    
+
+</RelativeLayout>
