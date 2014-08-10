@@ -4,7 +4,7 @@ LinkedIn-Reach
 ![ScreenShot](/SCREENSHOTS/site 1.png)
 
 
-LinkedIn Hackathon - Reach
+LinkedIn Hackathon - Reach (Top 10 Finalist)
 
 Contributors
 
